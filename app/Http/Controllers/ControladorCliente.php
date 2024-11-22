@@ -8,7 +8,7 @@ class ControladorCliente extends Controller
 {
     public function control()
     {
-        return 'Nueva controlador';
+        return view('index');
     }
 
     public function cedula($id)
