@@ -10,4 +10,14 @@ class ControladorCliente extends Controller
     {
         return 'Nueva controlador';
     }
+
+    public function cedula($id)
+    {
+        return 'Mi identificación es: '. $id;
+    } 
+
+    public function saludo($nombre)
+    {
+        return 'Hola '.$nombre;
+    }
 }

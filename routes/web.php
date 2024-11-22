@@ -9,6 +9,11 @@ Route::get('/', function () {
 
 Route::get('/cliente', [ControladorCliente::class, 'control']);
 
+Route::get('/cliente/{nombre}', [ControladorCliente::class, 'saludo']);
+
+Route::get('/clientes/{id}', [ControladorCliente::class, 'cedula']);
+
+
 
 // Route::get('/cliente/{id}', function ($id) {
 //     return '<h1>Mi identificacion es</h1>'.$id;
