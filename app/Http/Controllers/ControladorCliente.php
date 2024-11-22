@@ -13,7 +13,7 @@ class ControladorCliente extends Controller
 
     public function cedula($id)
     {
-        return 'Mi identificación es: '. $id;
+        return view('details');
     } 
 
     public function saludo($nombre)

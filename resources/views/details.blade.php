@@ -4,8 +4,9 @@
         <meta charset="UTF-8">
         <title>PHP MVC Frameworks</title>
             <link rel="icon" type="image/x-icon" href="favicon.ico" />
-            <link rel="stylesheet" href="./assets/css/foundation.css">
-            <link rel="stylesheet" href="./assets/css/app.css">
+            <link rel="stylesheet" href="{{ asset('./assets/css/foundation.css')}}">
+            <link rel="stylesheet" href="{{ asset('./assets/css/app.css')}}">
+            <link rel="stylesheet" href="{{ asset('/assets/css/foundation.css')}}">.
     <meta class="foundation-mq"></head>
     <body>
 
@@ -55,9 +56,9 @@
       </ul>
     </div>
 
-        <script src="./assets/js/vendor/jquery.js"></script>
-        <script src="./assets/js/vendor/what-input.js"></script>
-        <script src="./assets/js/vendor/foundation.js"></script>
-        <script src="./assets/js/app.js"></script>
+        <script src="{{ asset('./assets/js/vendor/jquery.js')}}"></script>
+        <script src="{{ asset('./assets/js/vendor/what-input.js')}}"></script>
+        <script src="{{ asset('./assets/js/vendor/foundation.js')}}"></script>
+        <script src="{{ asset('./assets/js/app.js"')}}></script>
     </body>
 </html>

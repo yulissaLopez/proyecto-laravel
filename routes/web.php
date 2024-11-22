@@ -9,9 +9,9 @@ Route::get('/', function () {
 
 Route::get('/cliente', [ControladorCliente::class, 'control']);
 
-Route::get('/cliente/{nombre}', [ControladorCliente::class, 'saludo']);
-
 Route::get('/clientes/{id}', [ControladorCliente::class, 'cedula']);
+
+Route::get('/cliente/{nombre}', [ControladorCliente::class, 'saludo']);
 
 
 
