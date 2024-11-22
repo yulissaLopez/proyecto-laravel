@@ -40,18 +40,14 @@
             <td>vincent@domain.com</td>
             <td><a class="button hollow" href="./details.html">VIEW DETAILS</a></td>
           </tr>
+          @foreach($clientes as $cliente)
           <tr>
-            <td>Mia</td>
-            <td>Wallace</td>
-            <td>mia@domain.com</td>
-            <td><a class="button hollow" href="./details.html">VIEW DETAILS</a></td>
+              <td>{{ $cliente['name']}}</td>
+              <td>{{ $cliente['last_name']}}</td>
+              <td>{{ $cliente['email']}}</td>
+              <td><a class="button hollow" href="./details.html">VIEW DETAILS</a></td>
           </tr>
-          <tr>
-            <td>Jules</td>
-            <td>Winnfield</td>
-            <td>jules@domain.com</td>
-            <td><a class="button hollow" href="./details.html">VIEW DETAILS</a></td>
-          </tr>
+          @endforeach
         </table>
       </div>
     </div>
